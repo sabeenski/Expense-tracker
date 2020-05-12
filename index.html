@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Expense Tracker | VanillaJs</title>
+  </head>
+  <body class="container">
+    <div class="content">
+      <div class="app-heading">
+        <h2>Expense Tracker</h2>
+      </div>
+      <div>
+        <div class="balance-heading">
+          <h4>Your balance</h4>
+          <p class="balance">0€</p>
+        </div>
+
+        <div class="income-expense-container">
+          <div class="income-inner-content">
+            <h4>Income</h4>
+            <p class="money-plus">0€</p>
+          </div>
+          <div class="expense-inner-content">
+            <h4>Expense</h4>
+            <p class="money-minus">0€</p>
+          </div>
+        </div>
+      </div>
+      <div class="history-container">
+        <h5>History</h5>
+        <hr />
+        <ul class="history-list"></ul>
+      </div>
+      <form class="form" onsubmit="event.preventDefault()">
+        <h5>Add new transaction:</h5>
+        <hr />
+
+        <div>
+          <label for="transaction-name">Description</label>
+
+          <input
+            type="type"
+            class="transaction-name"
+            placeholder="Enter description"
+            required
+            name="transaction-name"
+          />
+        </div>
+        <div>
+          <label for="transaction-amount" class="amount"
+            >Amount
+            <span>
+              (Provide negative numbers as expense and positive numbers as
+              income)
+            </span>
+          </label>
+          <input
+            type="number"
+            class="transaction-amount"
+            placeholder="Enter amount"
+            required
+          />
+        </div>
+        <button type="submit" class="add-btn">
+          Add Transaction
+        </button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

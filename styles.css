@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  margin: 2rem auto
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.income {
+  border-right: 5px solid green;
+}
+
+.expense {
+  border-right: 5px solid red;
+}
+
+.content {
+  margin: auto auto;
+  width: 50%;
+  box-shadow: 1px 1px 3px 1px #333;
+  padding: 20px
+}
+
+.app-heading {
+  margin: 5px auto;
+  color: #9c88ff
+}
+
+.income-expense-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  box-shadow: 3px 5px 15px #fafafa;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.income-expense-container>div {
+  flex: 1;
+  text-align: center;
+}
+
+.income-expense-container>div>p {
+  margin-bottom: 0px;
+}
+
+.income-expense-container>div:first-child {
+  border-right: 1px solid #dedede;
+}
+
+.income-inner-content>p {
+  color: green
+}
+
+.expense-inner-content>p {
+  color: red
+}
+
+.history-container {
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.add-btn {
+  border: none;
+  color: white;
+  background-color: #9c88ff;
+  margin: 1rem auto;
+  padding: 0.2rem 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  border: 1px solid #9c88ff;
+  color: #9c88ff;
+  background-color: white;
+}
+
+form>div {
+  margin-bottom: 1em;
+}
+
+.fa-trash-alt {
+  pointer-events: none;
+}
+
+.amount>span {
+  font-size: 10px;
+  color: #5bc0de
+}
