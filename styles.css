@@ -40,6 +40,12 @@ h4 {
   padding: 20px
 }
 
+@media only screen and (max-width:500px) {
+  .content {
+    width: 100%
+  }
+}
+
 .app-heading {
   margin: 5px auto;
   color: #9c88ff
